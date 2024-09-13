@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   
   return (
-    <div className="flex sm:flex-row flex-col  justify-between sm:px-24 px-5 py-5 sm:pt-60 pt-36 ">
+    <div className="bg-gradient-to-r from-pink-100 to-blue-100 flex sm:flex-row flex-col  justify-between sm:px-24 px-5 py-8 sm:pt-60 pt-36 ">
       <div className="flex flex-col items-center sm:py-0 py-5 ">
         <Image src='/images/sumi.png' alt="icon" width={400} height={400} className="rounded-full shadow-lg"/>
 
@@ -18,6 +18,13 @@ successful contributions to any research and training activities I work for. </h
         <h1 className="font fold text-xl py-2 font-semibold">Research Interest</h1>
         <h1 className="text-lg"> Development policies, Labor economics, Education Economics and Environmental 
         economics. </h1>
+
+        <h1 className="font-bold text-xl pt-5 pb-2">Membership</h1>
+        <ul className="list-disc pl-5">
+          <li>Lifetime member of Bangladesh Economic Association, Bangladesh</li>
+          <li>Member of Scottish Economic Society, UK</li>
+          <li>Member of Lions Club, Bangladesh</li>
+        </ul>
 
         <div className="my-8 flex justify-center items-center">
         <button className="rounded-full bg-gray-500 text-white font-medium px-5 py-3 text-xl hover:bg-gray-800">

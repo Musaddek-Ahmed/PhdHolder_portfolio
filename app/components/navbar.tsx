@@ -15,7 +15,7 @@ const links = [
       path: '/education'
   },
   {
-      name: 'projects',
+      name: 'projects experience',
       path: '/project'
   },
   
@@ -42,7 +42,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='fixed w-full sm:h-56 h-24 bg-white border-b-2 border-gray-600 sm:px-24 px-0 shadow-md'>
+    <div className='fixed z-50 w-full sm:h-56 h-24 bg-white border-b-2 border-gray-600 sm:px-24 px-0 shadow-md'>
         <div className=' flex flex-row justify-between sm:px-24 px-3 py-8'>
         <div className='sm:text-6xl text-lg tracking-[-1px] text-gray-800 font-bold font-[family-name:var(--font-geist-mono)]'>Nazmun Nessa (Sumi) Bakth.</div>
         

@@ -32,11 +32,11 @@ const page = () => {
 
 
   return (
-    <div className="flex flex-col sm:px-24 px-5 py-5 sm:pt-60 pt-36 ">
+    <div className="bg-gradient-to-r from-pink-100 to-yellow-100 flex flex-col sm:px-24 px-5 py-5 sm:pt-60 pt-36 ">
 {educationDetails.map((edu, index) => (
   <div
     key={index}
-    className="mb-10 p-6 bg-white shadow-lg rounded-lg border-l-4 border-gray-800"
+    className="mb-10 p-6 bg-white shadow-lg rounded-lg border-l-4 border-gray-800 transform transition duration-500 hover:scale-105"
   >
     <h2 className="text-2xl font-semibold text-gray-700">{edu.institution}</h2>
     <p className="text-gray-600 text-lg">{edu.duration}</p>

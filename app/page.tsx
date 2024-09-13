@@ -18,7 +18,7 @@ successful contributions to any research and training activities I work for. </h
 
         <h1 className="font fold text-xl py-2 font-semibold">Research Interest</h1>
         <h1 className="text-lg"> Development policies, Labor economics, Education Economics and Environmental 
-        economics. </h1>
+        economics.</h1>
 
         <h1 className="font-bold text-xl pt-5 pb-2">Membership</h1>
         <ul className="list-disc pl-5">

@@ -26,8 +26,8 @@ const page = () => {
             key={index}
             className="p-8 bg-white rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
           >
-            <h2 className="text-3xl font-semibold text-gray-700 mb-4">{project.title}</h2>
-            <p className="text-gray-700 text-lg">{project.description}</p>
+            <h2 className="sm:text-3xl text-xl font-semibold text-gray-700 mb-4">{project.title}</h2>
+            <p className="text-gray-700 sm:text-lg text-md">{project.description}</p>
           </div>
         ))}
       </div>

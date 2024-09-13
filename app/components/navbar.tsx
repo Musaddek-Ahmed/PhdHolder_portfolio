@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { HiMenu, HiX } from 'react-icons/hi'
+import { PiDotsThreeOutlineVerticalLight } from "react-icons/pi";
 
 const links = [
   {
@@ -48,8 +49,9 @@ const Navbar = () => {
         
         
         <div className='sm:block hidden'>
-            <button className='px-5 py-3 border-[1px]  shadow-md bg-slate-500 text-white hover:bg-gray-800 font-semibold text-xl rounded-full font-[family-name:var(--font-geist-sans)]'>
+            <button className='flex flex-row gap-3 items-center px-5 py-3 border-[1px]  shadow-md bg-slate-500 text-white hover:bg-gray-800 font-semibold text-xl rounded-full font-[family-name:var(--font-geist-sans)]'>
                 Contact 
+                <PiDotsThreeOutlineVerticalLight />
             </button>
         </div>
 

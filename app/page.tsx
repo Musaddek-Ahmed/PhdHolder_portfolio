@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaDownload } from "react-icons/fa6";
 
 export default function Home() {
   
@@ -27,9 +28,13 @@ successful contributions to any research and training activities I work for. </h
         </ul>
 
         <div className="my-8 flex justify-center items-center">
-        <button className="rounded-full bg-gray-500 text-white font-medium px-5 py-3 text-xl hover:bg-gray-800">
-          Download CV
-        </button>
+        <a
+        href="/CV.pdf"
+        download="CV.pdf"
+         className="rounded-full flex flex-row gap-3 items-center bg-gray-500 text-white font-medium px-5 py-3 text-xl hover:bg-gray-800">
+          Download CV 
+          <FaDownload />
+        </a>
       </div>
       
       </div>

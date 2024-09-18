@@ -4,11 +4,14 @@ import { FaDownload } from "react-icons/fa6";
 export default function Home() {
   
   return (
-    <div className=" bg-gray-900 flex sm:flex-row flex-col  justify-between sm:px-24 px-5  sm:pt-60 pt-36 ">
-      <div className="flex flex-col items-center sm:py-0 py-5 ">
+    <div className=" bg-gray-900 flex sm:flex-row flex-col  justify-between sm:px-24 px-5  sm:pt-60 pt-36 font-[family-name:var(--font-geist-mono)]">
+
+<div className="sm:hidden flex flex-col items-center sm:py-0 py-2 -mt-5">
         <Image src='/images/sumi.png' alt="icon" width={300} height={300} className="rounded-full shadow-lg"/>
 
       </div>
+
+
       <div className="flex flex-col text-lg text-gray-300 text-justify sm:w-[70%] w-full leading-8">
         <h1 className="pb-4">A recent PhD degree from the University of Aberdeen, looking forward to joining any research 
 position or similar to best utilize my skills and knowledge and also to developing my research 
@@ -37,6 +40,11 @@ successful contributions to any research and training activities I work for. </h
         </a>
       </div>
       
+      </div>
+
+      <div className="sm:flex hidden flex-col items-center sm:py-0 py-5 ">
+        <Image src='/images/sumi.png' alt="icon" width={300} height={300} className="rounded-full shadow-lg"/>
+
       </div>
       
     </div>

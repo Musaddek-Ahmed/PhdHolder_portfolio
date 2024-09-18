@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react";
+import Card from "../components/card";
 
-const page = () => {
+const Page = () => {
   const projectExperiences = [
     {
       title: "Co-investigator of the project: “Theoretical and Empirical Perspective of Migration Cost Differential Between Trafficked and Legal International Migration”",
@@ -17,22 +18,23 @@ const page = () => {
   ];
 
   return (
-        <div className="bg-gray-800 flex flex-col sm:px-24 px-5 py-5 sm:pt-60 pt-36">
-      
-
+    <div className="bg-gray-800 flex flex-col sm:px-24 px-5 py-5 sm:pt-60 pt-36">
       <div className="space-y-12">
         {projectExperiences.map((project, index) => (
-          <div
+          <Card
             key={index}
-            className="p-8 bg-white rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-          >
-            <h2 className="sm:text-3xl text-xl font-semibold text-gray-700 mb-4">{project.title}</h2>
-            <p className="text-gray-700 sm:text-lg text-md">{project.description}</p>
-          </div>
+            title={project.title}
+            description={project.description}
+            authors={''}
+            year= {''}
+            journal= {''}
+            link= {''}
+
+          />
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;

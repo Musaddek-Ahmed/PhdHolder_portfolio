@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { PiDotsThreeOutlineVerticalLight } from "react-icons/pi";
+import Button from './button'
 
 const links = [
   {
@@ -49,10 +50,7 @@ const Navbar = () => {
         
         
         <div className='sm:block hidden'>
-            <button className='flex flex-row gap-3 items-center px-5 py-3  shadow-md bg-purple-800 text-white hover:bg-purple-900 font-semibold text-xl rounded-full font-[family-name:var(--font-geist-sans)]'>
-                Contact 
-                <PiDotsThreeOutlineVerticalLight />
-            </button>
+            <Button/>
         </div>
 
         <div className='sm:hidden flex '>

@@ -1,5 +1,8 @@
+'use client'
+
 import Image from "next/image";
 import { FaDownload } from "react-icons/fa6";
+import Download from "./components/download";
 
 export default function Home() {
   
@@ -31,13 +34,8 @@ successful contributions to any research and training activities I work for. </h
         </ul>
 
         <div className="my-8 flex justify-center items-center">
-        <a
-        href="/CV.pdf"
-        download="CV.pdf"
-         className="rounded-full flex flex-row gap-3 items-center bg-purple-700 text-white font-medium px-5 py-3 text-xl hover:bg-purple-800">
-          Download CV 
-          <FaDownload />
-        </a>
+        <Download/>
+        
       </div>
       
       </div>

@@ -12,7 +12,7 @@ export default function Home() {
       </div>
 
 
-      <div className="flex flex-col text-lg text-gray-300 text-justify sm:w-[70%] w-full leading-8">
+      <div className="flex flex-col text-lg text-gray-300 sm:text-justify text-left sm:w-[70%] w-full leading-8">
         <h1 className="pb-4">A recent PhD degree from the University of Aberdeen, looking forward to joining any research 
 position or similar to best utilize my skills and knowledge and also to developing my research 
 orientation with the experience of working in a practical and challenging environment. 

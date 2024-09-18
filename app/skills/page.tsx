@@ -3,7 +3,7 @@ import { FaLaptopCode, FaLanguage, FaUsers, FaChalkboardTeacher } from "react-ic
 
 const page = () => {
   return (
-    <div className="bg-gradient-to-r from-pink-100 to-yellow-100 sm:px-24 px-5 py-5 sm:pt-60 pt-36 ">
+    <div className="bg-gray-800 sm:px-24 px-5 py-5 sm:pt-60 pt-36 ">
     
 
     <div className="grid grid-cols-1 sm:grid-cols-2  gap-12 ">

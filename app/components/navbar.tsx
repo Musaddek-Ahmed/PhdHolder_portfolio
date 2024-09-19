@@ -32,7 +32,39 @@ const links = [
   {
     name: 'awards',
     path: '/awards'
+}
+]
+
+const mobileLinks = [
+  {
+      name: 'Introduction',
+      path: '/'
+  },
+  {
+      name: 'Education',
+      path: '/education'
+  },
+  {
+      name: 'projects experience',
+      path: '/project'
+  },
+  
+  {
+      name: 'publications',
+      path: '/publications'
+  },
+  {
+      name: 'skills',
+      path: '/skills'
+  },
+  {
+    name: 'awards',
+    path: '/awards'
 },
+  {
+    name: 'contact',
+    path: '/'
+  }
 ]
 
 const Navbar = () => {
@@ -73,21 +105,23 @@ const Navbar = () => {
 
         <div
         className={`sm:hidden transition-max-height duration-300 ease-in-out overflow-hidden ${
-          menuOpen ? 'max-h-96' : 'max-h-0'
+          menuOpen ? 'max-h-98' : 'max-h-0'
         } px-3 text-lg text-gray-100 font-semibold bg-black border-b-2 border-gray-100`}
       >
-        {links.map((link, index) => (
+        {mobileLinks.map((mobilelink, index) => (
           <Link
-            href={link.path}
+            href={mobilelink.path}
             key={index}
             className={`${
-              link.path === pathname && 'text-gray-300 border-dashed border-b-2 border-gray-100'
+              mobilelink.path === pathname && 'text-gray-300 border-dashed border-b-2 border-gray-100'
             } text-center block py-4 capitalize font-semibold hover:text-gray-300 transition-all`}
             onClick={() => setMenuOpen(false)}
           >
-            {link.name}
+            {mobilelink.name}
           </Link>
         ))}
+
+        
       </div>
     </div>
   )

@@ -33,11 +33,11 @@ const page = () => {
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
       {awards.map((award, index) => (
-        <div key={index} className="bg-white rounded-lg shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center">
+        <div key={index} className="bg-black rounded-lg shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center">
           {award.icon}
-          <h2 className="sm:text-2xl text-xl text-center font-bold text-gray-700 mb-2">{award.title}</h2>
-          <p className="text-lg text-gray-600 text-center">{award.description}</p>
-          {award.year && <p className="text-sm text-gray-500 mt-4">{award.year}</p>}
+          <h2 className="sm:text-2xl text-xl text-center font-bold text-gray-100 mb-2">{award.title}</h2>
+          <p className="text-lg text-gray-300 text-center">{award.description}</p>
+          {award.year && <p className="text-sm text-gray-400 mt-4">{award.year}</p>}
         </div>
       ))}
     </div>
